@@ -1,15 +1,109 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Визуализатор математических графиков</title>
-  <meta charset="utf8"/>
- </head>
- <body>
-  <p>
-    Содержимое этого файла HTML будет отображаться на&nbsp;странице
-    <a href="https://bmstu-iu9.github.io/utp2018-3-graphics">
-      https://bmstu-iu9.github.io/utp2018-3-graphics
-    </a>
-  </p>
- </body>
+<head>
+	<title>HERE COMES A FUNCTION PLOT</title>
+  <link href="./styles/mainPage.css" rel="stylesheet" type="text/css">
+	<script  src="./scripts/mainPage.js"></script>
+
+	<script src="./scripts/algorithms/twoVarFuncPlot.js"></script>
+
+
+</head>
+<body>
+
+
+
+	<div id="main_wrapper">
+
+			<div id="canvas_block">
+				<span id="title_text">
+					HERE COMES A FUNCTION PLOT
+				</span>
+
+				<canvas id="canvas" width="800" height=800"></canvas>
+			</div>
+
+
+
+			<div id="menu_block">
+				<div id="menu_form">
+
+					<div id="select_block">
+						<select id="select_field">
+							<option>Функция 1-ой переменной</option>
+							<option>Функция 2-ух переменных</option>
+						</select>
+					</div>
+
+					<div id="otherFields_block">
+
+						<div id="XY_block">
+							<div id="X_block">
+								<label for="X_field">
+									X:
+									<input type="text" placeholder="0.0"
+									id ="X_field" class="X_fields"
+									>
+								</label>
+
+								<label for="A_field">
+									A:
+									<input type="text"
+									placeholder="0.0"
+									id="A_field" class="X_fields">
+								</label>
+
+								<label for="B_field">
+									B:
+									<input type="text"
+									placeholder="0.0"
+									id="B_field" class="X_fields">
+								</label>
+							</div>
+
+							<div id="Y_block">
+								<label for="Y_field">
+									Y:
+									<input type="text" placeholder="0.0"
+									id ="Y_field" class="Y_fields"
+									>
+								</label>
+
+								<label for="C_field">
+									C:
+									<input type="text"
+									placeholder="0.0"
+									id="C_field" class="Y_fields">
+								</label>
+
+								<label for="D_field">
+									D:
+									<input type="text"
+									placeholder="0.0"
+									id="D_field" class="Y_fields">
+								</label>
+							</div>
+						</div>
+
+						<div id="function_block">
+							<div id="function_block2">
+								<label for="function_field">
+									F(x,y):
+
+									<input type="text" id="function_field">
+
+
+								</label>
+							</div>
+						</div>
+
+					</div>
+
+
+
+				</div>
+			</div>
+
+	</div>
+</body>
 </html>
